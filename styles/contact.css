@@ -23,6 +23,10 @@ nav {
     width: 120px;
 }
 
+#login {
+    width: 12px;
+}
+
 #navigatie-dropdown {
     width: 30px;
     display: block;

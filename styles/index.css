@@ -23,6 +23,10 @@ nav {
     width: 120px;
 }
 
+#login {
+    width: 12px;
+}
+
 #navigatie-dropdown {
     width: 30px;
     display: block;
@@ -44,23 +48,28 @@ nav {
 }
 
 h1 {
+    font-size: 60px;
     color: black;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     text-align: center;
 }
 
+header h3 {
+    margin-left: 200px;
+    margin-right: 200px;
+}
 header {
     text-transform: uppercase;
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 150px;
+    margin-bottom: 200px;
 }
 
 .principles {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 article{
@@ -105,7 +114,7 @@ p {
     font-size: large;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .video-container    {
@@ -122,7 +131,7 @@ footer {
     background-color: hsl(138, 70%, 84%);
     color: hsl(220, 3%, 45%);
     border-style: double;
-    margin-top: 50px;
+    margin-top: 75px;
 }
 
 .footer-container {
