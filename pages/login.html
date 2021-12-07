@@ -6,18 +6,32 @@
     <title>Login</title>
 </head>
 <body>
-
 <nav>
     <div class="nav-container">
         <a href="index.html"><img src="../assets/voedie-logo.jpg" alt=Voedie id="logo"/></a>
         <ul>
             <li><a href="voedie-maag.html">Voedie maag</a></li>
             <li><a href="voedie-praat.html">Voedie praat</a></li>
-            <li><a class="active" href="login.html"> <img src="../assets/login.svg" alt="login" id="login"> Login</a></li>
+            <li><a class="active" href="login.html"> <img src="../assets/login.svg" alt="login" id="login"> Login</a>
+            </li>
         </ul>
         <img src="../assets/menu.svg" alt="Menu" id="navigatie-dropdown"/>
     </div>
 </nav>
+
+<main>
+    <div class="login-container">
+        <img src="../assets/voedie-logo.jpg" alt="logo" id="login-logo">
+        <span>Inloggen</span>
+        <span> Je VoedieMeals-account gebruiken</span>
+        <label for="user-email-field"></label>
+        <input type="email" placeholder="E-Mail" id="user-email-field" name="user-email"/>
+        <label for="user-password-field"></label>
+        <input type="password" placeholder="********" id="user-password-field" name="user-password"/>
+        <div class="forgot-password"><a href="wachtwoord-vergeten.html"> Wachtwoord vergeten?</a> </div>
+        <span><button type="submit">Login</button></span>
+    </div>
+</main>
 
 <footer>
     <div class="footer-container">

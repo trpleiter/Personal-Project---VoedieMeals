@@ -12,6 +12,8 @@ body {
 }
 
 nav {
+    position: sticky;
+    top: 0;
     background-color: hsl(138, 70%, 84%);
     color: hsl(220, 3%, 45%);
     border-style: double;

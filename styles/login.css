@@ -17,6 +17,7 @@ nav {
     background-color: hsl(138, 70%, 84%);
     color: hsl(220, 3%, 45%);
     border-style: double;
+    margin-bottom: 50px;
 }
 
 #logo {
@@ -45,6 +46,26 @@ nav {
 .nav-container ul {
     display: none;
     list-style-type: none;
+}
+
+main    {
+    border-radius: 8px;
+    border: 1px solid #dadce0;
+    display: block;
+    margin: auto;
+    width: 450px;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+    padding: 20px;
+}
+#login-logo{
+    width: 120px;
+    border-radius: 60px;
 }
 
 footer {
