@@ -12,8 +12,6 @@ body {
 }
 
 nav {
-    position: sticky;
-    top: 0;
     background-color: hsl(138, 70%, 84%);
     color: hsl(220, 3%, 45%);
     border-style: double;
@@ -45,6 +43,51 @@ nav {
 .nav-container ul {
     display: none;
     list-style-type: none;
+}
+
+h1{
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+.q-container {
+    width: 500px;
+    height: 80px;
+    background-color: hsl(138, 70%, 84%);
+    position: relative;
+    border-radius: 10px;
+    padding: 16px;
+    margin-left: 50px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    box-shadow: 10px 10px 5px grey;
+}
+
+.a-container {
+    width: 180px;
+    height: 80px;
+    background-color: hsl(138, 70%, 84%);
+    position: relative;
+    border-radius: 10px;
+    padding: 16px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    box-shadow: 10px 10px 5px grey;
+}
+
+.q-container::before,
+.a-container::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-right: 20px solid hsl(138, 70%, 84%);
+    border-bottom: 13px solid transparent;
+    position: absolute;
+    left: -20px;
+    top: 26px;
 }
 
 footer {
@@ -79,7 +122,7 @@ footer {
     border-radius: 15px;
 }
 
-.active{
+.active {
     border: 2px solid hsl(138, 70%, 75%);
 }
 
