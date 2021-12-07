@@ -21,15 +21,20 @@
 
 <main>
     <div class="login-container">
-        <img src="../assets/voedie-logo.jpg" alt="logo" id="login-logo">
+        <a href="index.html"><img src="../assets/voedie-logo.jpg" alt="logo" id="login-logo"></a>
         <span>Inloggen</span>
         <span> Je VoedieMeals-account gebruiken</span>
         <label for="user-email-field"></label>
         <input type="email" placeholder="E-Mail" id="user-email-field" name="user-email"/>
         <label for="user-password-field"></label>
         <input type="password" placeholder="********" id="user-password-field" name="user-password"/>
-        <div class="forgot-password"><a href="wachtwoord-vergeten.html"> Wachtwoord vergeten?</a> </div>
-        <span><button type="submit">Login</button></span>
+        <div class="account-set">
+            <ul>
+            <a href="wachtwoord-vergeten.html"> Wachtwoord vergeten?</a>
+            <a href="sign-up.html">Aanmelden</a>
+            </ul>
+        </div>
+        <button type="submit">Login</button>
     </div>
 </main>
 

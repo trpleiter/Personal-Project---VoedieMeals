@@ -14,10 +14,11 @@ body {
 nav {
     position: sticky;
     top: 0;
+    width: 100%;
     background-color: hsl(138, 70%, 84%);
     color: hsl(220, 3%, 45%);
     border-style: double;
-    margin-bottom: 50px;
+    margin-bottom: 200px;
 }
 
 #logo {
@@ -63,16 +64,69 @@ main    {
     align-items:center;
     padding: 20px;
 }
-#login-logo{
-    width: 120px;
-    border-radius: 60px;
+
+#login-logo {
+    width: 150px;
+    border-radius: 80px;
+}
+
+.login-container span {
+    font-size: 14px;
+    padding: 16px;
+}
+
+#user-email-field {
+    width: 250px;
+    padding: 8px;
+    margin: 8px;
+}
+
+#user-password-field {
+    padding: 8px;
+    margin: 8px;
+    width: 250px;
+}
+
+.account-set {
+    font-style: italic;
+    font-size: 10px;
+    margin-bottom: 32px;
+}
+
+.account-set ul a   {
+    padding: 45px;
+}
+
+a {
+    color: hsl(220, 3%, 45%);
+}
+
+a:hover {
+    color: hsl(138, 70%, 84%);
+}
+
+button{
+    background-color: hsl(138, 70%, 84%);
+    padding: 16px;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+button:hover{
+    background-color:hsl(138, 70%,75%);
 }
 
 footer {
     background-color: hsl(138, 70%, 84%);
     color: hsl(220, 3%, 45%);
     border-style: double;
-    margin-top: 50px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 25px;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 200px;
 }
 
 .footer-container {
