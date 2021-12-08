@@ -8,6 +8,7 @@
 body {
     font-family: 'Source Code Pro', monospace;
     background-color: white;
+    background-image: url("../assets/ingredients-background.jpg");
     color: hsl(220, 3%, 45%)
 }
 
@@ -138,9 +139,9 @@ footer {
     display: block;
     color: hsl(220, 3%, 45%);
     text-align: center;
-    padding: 5px 5px;
+    padding: 3px;
     text-decoration: none;
-    border-radius: 15px;
+    border-radius: 6px;
 }
 
 .active {

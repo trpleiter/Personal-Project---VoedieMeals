@@ -8,13 +8,13 @@
 body {
     font-family: 'Source Code Pro', monospace;
     background-color: white;
+    background-image: url("../assets/ingredients-background.jpg");
     color: hsl(220, 3%, 45%)
 }
 
 nav {
     position: sticky;
     top: 0;
-    width: 100%;
     background-color: hsl(138, 70%, 84%);
     color: hsl(220, 3%, 45%);
     border-style: double;
@@ -49,7 +49,8 @@ nav {
     list-style-type: none;
 }
 
-main    {
+main {
+    background-color: white;
     border-radius: 8px;
     border: 1px solid #dadce0;
     display: block;
@@ -61,7 +62,7 @@ main    {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items:center;
+    align-items: center;
     padding: 20px;
 }
 
@@ -93,7 +94,7 @@ main    {
     margin-bottom: 32px;
 }
 
-.account-set ul a   {
+.account-set ul a {
     padding: 45px;
 }
 
@@ -105,15 +106,15 @@ a:hover {
     color: hsl(138, 70%, 84%);
 }
 
-button{
+button {
     background-color: hsl(138, 70%, 84%);
     padding: 16px;
-    border: 2px solid black;
+    border: 1px solid black;
     border-radius: 8px;
 }
 
-button:hover{
-    background-color:hsl(138, 70%,75%);
+button:hover {
+    background-color: hsl(138, 70%, 75%);
 }
 
 footer {
@@ -125,7 +126,6 @@ footer {
     bottom: 0;
     height: 25px;
     width: 100%;
-    overflow: hidden;
     margin-top: 100px;
 }
 
@@ -151,10 +151,10 @@ footer {
     text-align: center;
     padding: 5px 5px;
     text-decoration: none;
-    border-radius: 15px;
+    border-radius: 6px;
 }
 
-.active{
+.active {
     border: 2px solid hsl(138, 70%, 75%);
 }
 

@@ -7,6 +7,7 @@
 
 body {
     font-family: 'Source Code Pro', monospace;
+    background-image: url("../assets/ingredients-background.jpg");
     background-color: white;
     color: hsl(220, 3%, 45%)
 }
@@ -17,6 +18,7 @@ nav {
     background-color: hsl(138, 70%, 84%);
     color: hsl(220, 3%, 45%);
     border-style: double;
+    margin-bottom: 50px;
 }
 
 #logo {
@@ -47,10 +49,80 @@ nav {
     list-style-type: none;
 }
 
+main    {
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid #dadce0;
+    display: block;
+    margin: auto;
+    width: 450px;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+    padding: 20px;
+}
+
+.contact-container span {
+    text-align: center;
+    font-weight: bold;
+    padding: 16px;
+}
+
+#contactlogo{
+    width: 150px;
+    border-radius: 80px;
+}
+
+#first-name {
+    padding: 8px;
+    margin: 8px;
+    width: 250px;
+}
+
+#surname {
+    padding: 8px;
+    margin: 8px;
+    width: 250px;
+}
+
+#user-email {
+    padding: 8px;
+    margin: 8px;
+    width: 250px;
+}
+
+#user-message
+{
+    padding: 8px;
+    margin: 8px;
+    width: 250px;
+}
+
+button{
+    background-color: hsl(138, 70%, 84%);
+    padding: 16px;
+    margin: 16px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: hsl(138, 70%, 75%);
+}
+
 footer {
     background-color: hsl(138, 70%, 84%);
     color: hsl(220, 3%, 45%);
     border-style: double;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 25px;
+    width: 100%;
     margin-top: 50px;
 }
 
@@ -74,7 +146,7 @@ footer {
     display: block;
     color: hsl(220, 3%, 45%);
     text-align: center;
-    padding: 5px 5px;
+    padding: 3px;
     text-decoration: none;
     border-radius: 6px;
 }

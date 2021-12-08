@@ -73,7 +73,14 @@ header {
     text-transform: uppercase;
     text-align: center;
     margin-top: 100px;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
+}
+
+.ingredient-back {
+    background-image: url("../assets/ingredients-background.jpg");
+    padding-top: 75px;
+    padding-bottom: 75px;
+
 }
 
 .principles {
@@ -148,7 +155,6 @@ footer {
     background-color: hsl(138, 70%, 84%);
     color: hsl(220, 3%, 45%);
     border-style: double;
-    margin-top: 75px;
 }
 
 .footer-container {
