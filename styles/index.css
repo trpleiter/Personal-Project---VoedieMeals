@@ -5,6 +5,11 @@
     margin: 0;
 }
 
+:root {
+    --voediemealgreen:hsl(138, 70%, 84%);
+    --voediemealgrey: hsl(220, 3%, 45%);
+}
+
 body {
     font-family: 'Source Code Pro', monospace;
     background-color: white;
@@ -12,7 +17,7 @@ body {
 }
 
 nav {
-    background-color: hsl(138, 70%, 84%);
+    background-color: var(--voediemealgreen);
     color: hsl(220, 3%, 45%);
 }
 
@@ -40,21 +45,22 @@ nav {
     list-style-type: none;
 }
 
-.logo-container  {
+.logo-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-shrink: 3;
-    width:100%;
+    width: 100%;
 }
 
-#logo-homepage  {
+#logo-homepage {
     width: 600px;
 }
 
 .nav-bottom {
     background-color: white;
 }
+
 #img-nav-bottom {
     width: 100%;
 }
@@ -65,10 +71,6 @@ h1 {
     text-align: center;
 }
 
-header h3 {
-    margin-left: 200px;
-    margin-right: 200px;
-}
 header {
     text-transform: uppercase;
     text-align: center;
@@ -76,39 +78,110 @@ header {
     margin-bottom: 100px;
 }
 
-.ingredient-back {
+.homepage-main {
     background-image: url("../assets/ingredients-background.jpg");
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+    grid-template-rows: 200px 100px auto auto 100px 50px auto 100px 75px;
+    grid-template-areas:
+        "aside1 head head head"
+        "aside1 a1 a1 a2"
+        ". a1 a1 a2"
+        "a3 a3 a3 a3"
+        "aside2 aside2 . ."
+        "aside2 aside2 vid vid"
+        ". . vid vid"
+        ". . . ."
+        "foot foot foot foot";
+    grid-gap: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
     padding-top: 75px;
-    padding-bottom: 75px;
 
 }
 
-.principles {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin-bottom: 100px;
-}
-
-article{
-    border:solid 1px hsl(220, 3%, 45%);
-    box-shadow: 10px 10px 5px grey;
-}
-
-.principle-article {
-    background-color: hsl(138, 70%, 84%);
+.grid-item {
     border-radius: 15px;
-    height: 550px;
-    padding: 16px;
-    margin: 16px;
-    flex-basis: 300px;
-    flex-grow: 1;
-    flex-shrink: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     font-size: 20px;
+
+}
+
+#grid-header {
+    grid-area: head;
+    font-size: 30px;
+    background-color: white;
+    border: solid 1px var(--voediemealgrey);
+    box-shadow: 10px 10px 5px var(--voediemealgrey);
+    padding: 16px;
+}
+
+#grid-aside1 {
+    grid-area: aside1;
+    background-color: var(--voediemealgrey);
+    color: var(--voediemealgreen);
+    border: solid 1px black;
+    box-shadow: 10px 10px 5px var(--voediemealgreen);
+    padding: 16px;
+}
+
+#gezelligheid {
+    grid-area: a1;
+    background-color: var(--voediemealgreen);
+    border: solid 1px var(--voediemealgrey);
+    box-shadow: 10px 10px 5px var(--voediemealgrey);
+    padding: 16px;
+}
+
+#geen-verspilling {
+    grid-area: a2;
+    background-color: var(--voediemealgrey);
+    color: var(--voediemealgreen);
+    border: solid 1px black;
+    box-shadow: 10px 10px 5px var(--voediemealgreen);
+    padding: 16px;
+}
+
+#heerlijk-eten {
+    grid-area: a3;
+    background-color: var(--voediemealgreen);
+    border: solid 1px var(--voediemealgrey);
+    box-shadow: 10px 10px 5px var(--voediemealgrey);
+    padding: 16px;
+}
+
+#grid-aside2 {
+    grid-area: aside2;
+    position: relative;
+    background-color: var(--voediemealgrey);
+    color: var(--voediemealgreen);
+    border: solid 1px black;
+    box-shadow: 10px 10px 5px var(--voediemealgreen);
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    padding: 16px;
+}
+
+#grid-aside2::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-left: 20px solid var(--voediemealgrey);
+    border-bottom: 13px solid transparent;
+    position: absolute;
+    right: -20px;
+    bottom: 26px;
+
+}
+
+#ytvid {
+    grid-area: vid;
 }
 
 #delicious-food {
@@ -128,43 +201,28 @@ article{
     height: 200px;
     width: 200px;
 }
-p {
-    font-size: large;
-    font-weight: bold;
-    text-align: left;
+
+iframe {
+    border:5px solid var(--voediemealgreen);
+    width: 75%;
+    height: 400px;
 }
 
-.intro-vid {
-    font-size: large;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-.video-container    {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-iframe  {
-    box-shadow: 10px 10px 5px grey;
-}
-/*footer nog vast aan het einde van de pagina maken*/
 footer {
-    background-color: hsl(138, 70%, 84%);
+    background-color: var(--voediemealgreen);
     color: hsl(220, 3%, 45%);
     border-style: double;
 }
 
-.footer-container {
+#grid-footer {
+    grid-area: foot;
     display: flex;
     flex-direction: row;
     align-items: center;
     font-size: 12px;
 }
 
-.footer-container ul {
+#grid-footer ul {
     list-style-type: none;
     display: flex;
     flex-direction: row;
@@ -173,7 +231,7 @@ footer {
     flex-basis: 300px;
 }
 
-.footer-container ul li a {
+#grid-footer ul li a {
     display: block;
     color: hsl(220, 3%, 45%);
     text-align: center;
@@ -182,7 +240,7 @@ footer {
     border-radius: 15px;
 }
 
-@media screen and (min-width: 645px) {
+@media screen and (min-width: 576px) {
     #navigatie-dropdown {
         display: none;
     }
@@ -206,7 +264,8 @@ footer {
     }
 
     li a:hover {
-        background-color: hsl(138, 70%, 80%);}
+        background-color: hsl(138, 70%, 80%);
+    }
 
     .principles {
         flex-wrap: nowrap;
