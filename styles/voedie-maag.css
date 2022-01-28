@@ -56,9 +56,9 @@ nav {
     display: flex;
     justify-content: center;
     font-weight: bold;
-    font-size: 30px;
-    margin-left: 150px;
-    margin-right: 150px;
+    font-size: 35px;
+    margin-left: 50px;
+    margin-right: 50px;
     margin-top: 50px;
     padding: 50px;
     background-color: var(--voediemealgreen);
@@ -72,45 +72,177 @@ nav {
     justify-content: space-evenly;
 }
 
-.section-search {
+.\=section-search {
     background-color: var(--voediemealgrey);
+    color: var(--voediemealgreen);
+    text-align: center;
     box-shadow: 10px 10px 5px var(--voediemealgreen);
     border-radius: 15px;
     height: 350px;
     padding: 16px;
-    margin: 16px;
-    flex-basis: 215px;
+    margin: 50px;
+    flex-basis: 300px;
     flex-shrink: 1;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
 }
-
 
 #search-icon {
-    border-radius: 100px;
-    height: 200px;
-    width: 200px;
+    border-radius: 10px;
+    height: 100px;
+    width: 100px;
 }
 
-#mouse-icon{
-    border-radius: 100px;
-    height: 200px;
-    width: 200px;
+.\=section-search h2 {
+    font-size: 30px;
+    padding: 40px;
 }
 
-#cook-icon{
-    border-radius: 100px;
+.section-choose {
+    background-color: var(--voediemealgreen);
+    text-align: center;
+    box-shadow: 10px 10px 5px var(--voediemealgrey);
+    border-radius: 15px;
+    height: 350px;
+    padding: 16px;
+    margin: 50px;
+    flex-basis: 300px;
+    flex-shrink: 1;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#mouse-icon {
+    border-radius: 10px;
+    height: 100px;
+    width: 100px;
+}
+
+.section-choose h2 {
+    font-size: 30px;
+    padding: 40px;
+}
+
+.section-cook {
+    background-color: var(--voediemealgrey);
+    color: var(--voediemealgreen);
+    text-align: center;
+    box-shadow: 10px 10px 5px var(--voediemealgreen);
+    border-radius: 15px;
+    height: 350px;
+    padding: 16px;
+    margin: 50px;
+    flex-basis: 300px;
+    flex-shrink: 1;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#cook-icon {
+    border-radius: 10px;
+    height: 100px;
+    width: 100px;
+}
+
+.section-cook h2 {
+    font-size: 30px;
+    padding: 40px;
+}
+
+.searchbar {
+    display: flex;
+    justify-content: center;
+}
+
+#user-food-input {
+    font-size: large;
+    width: 600px;
+    padding: 16px;
+    border-radius: 8px;
+    margin-right: 8px;
+}
+
+button {
+    background-color: var(--voediemealgreen);
+    font-size: large;
+    width: 100px;
+    padding: 16px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: hsl(138, 70%, 75%);
+}
+
+h3 {
+    font-size: 30px;
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.background-container {
+    background-image: url("../assets/ingredients-background.jpg");
+}
+
+.recipe-results-row1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.recipe-results-row1 section {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 150px;
+    flex-grow: 1;
+    flex-shrink: 1;
     height: 200px;
-    width: 200px;
+    padding: 16px;
+    margin: 50px;
+    border:1px solid black;
+    border-radius: 15px;
+    box-shadow:10px 10px 5px var(--voediemealgreen);
+}
+
+.recipe-results-row2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.recipe-results-row2 section {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 150px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    height: 200px;
+    padding: 16px;
+    margin: 50px;
+    border:1px solid black;
+    border-radius: 15px;
+    box-shadow:10px 10px 5px var(--voediemealgreen);
 }
 
 footer {
     background-color: var(--voediemealgreen);
     color: var(--voediemealgrey);
     border-style: double;
-    margin-top: 50px;
 }
 
 .footer-container {
