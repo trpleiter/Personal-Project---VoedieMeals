@@ -52,7 +52,7 @@ nav {
     list-style-type: none;
 }
 
-.intro-voediepraat {
+.intro-voediemaag {
     display: flex;
     justify-content: center;
     font-weight: bold;
@@ -61,21 +61,17 @@ nav {
     margin-right: 50px;
     margin-top: 50px;
     padding: 50px;
+    border: 1px solid black;
     background-color: var(--voediemealgreen);
     border-radius: 12px;
     box-shadow: 10px 10px 5px var(--voediemealgrey);
-}
-
-.tutorial-voediemaag {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
 }
 
 .\=section-search {
     background-color: var(--voediemealgrey);
     color: var(--voediemealgreen);
     text-align: center;
+    border: 1px solid black;
     box-shadow: 10px 10px 5px var(--voediemealgreen);
     border-radius: 15px;
     height: 350px;
@@ -104,6 +100,7 @@ nav {
 .section-choose {
     background-color: var(--voediemealgreen);
     text-align: center;
+    border: 1px solid black;
     box-shadow: 10px 10px 5px var(--voediemealgrey);
     border-radius: 15px;
     height: 350px;
@@ -133,6 +130,7 @@ nav {
     background-color: var(--voediemealgrey);
     color: var(--voediemealgreen);
     text-align: center;
+    border: 1px solid black;
     box-shadow: 10px 10px 5px var(--voediemealgreen);
     border-radius: 15px;
     height: 350px;
@@ -159,6 +157,7 @@ nav {
 }
 
 .searchbar {
+    margin: 20px;
     display: flex;
     justify-content: center;
 }
@@ -195,12 +194,6 @@ h3 {
     background-image: url("../assets/ingredients-background.jpg");
 }
 
-.recipe-results-row1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
 .recipe-results-row1 section {
     background-color: white;
     display: flex;
@@ -212,15 +205,9 @@ h3 {
     height: 200px;
     padding: 16px;
     margin: 50px;
-    border:1px solid black;
+    border: 1px solid black;
     border-radius: 15px;
-    box-shadow:10px 10px 5px var(--voediemealgreen);
-}
-
-.recipe-results-row2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    box-shadow: 10px 10px 5px var(--voediemealgreen);
 }
 
 .recipe-results-row2 section {
@@ -234,9 +221,9 @@ h3 {
     height: 200px;
     padding: 16px;
     margin: 50px;
-    border:1px solid black;
+    border: 1px solid black;
     border-radius: 15px;
-    box-shadow:10px 10px 5px var(--voediemealgreen);
+    box-shadow: 10px 10px 5px var(--voediemealgreen);
 }
 
 footer {
@@ -274,7 +261,7 @@ footer {
     border: 2px solid hsl(138, 70%, 75%);
 }
 
-@media screen and (min-width: 645px) {
+@media screen and (min-width: 768px) {
     #navigatie-dropdown {
         display: none;
     }
@@ -300,4 +287,23 @@ footer {
     li a:hover {
         background-color: hsl(138, 70%, 80%);
     }
+
+    .tutorial-voediemaag {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .recipe-results-row1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .recipe-results-row2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
 }

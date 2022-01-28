@@ -159,7 +159,7 @@ footer {
     border: 2px solid hsl(138, 70%, 75%);
 }
 
-@media screen and (min-width: 645px) {
+@media screen and (min-width: 768pxpx) {
     #navigatie-dropdown {
         display: none;
     }

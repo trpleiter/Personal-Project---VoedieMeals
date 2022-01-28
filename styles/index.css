@@ -182,7 +182,7 @@ header {
     grid-area: vid;
     border: 5px solid var(--voediemealgreen);
     width: 85%;
-    height: 200px;
+    height: 400px;
 }
 
 #delicious-food {
@@ -244,7 +244,7 @@ li a:hover {
     background-color: hsl(138, 70%, 80%);
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 768px) {
     #navigatie-dropdown {
         display: none;
     }
@@ -266,9 +266,7 @@ li a:hover {
         font-weight: bold;
         border-radius: 15px;
     }
-}
 
-@media screen and (min-width: 768px) {
     header {
         font-size: 20px;
     }
