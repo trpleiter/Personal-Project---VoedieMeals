@@ -5,6 +5,11 @@
     margin: 0;
 }
 
+:root {
+    --voediemealgreen: hsl(138, 70%, 84%);
+    --voediemealgrey: hsl(220, 3%, 45%);
+}
+
 body {
     font-family: 'Source Code Pro', monospace;
     background-color: white;
@@ -15,8 +20,8 @@ body {
 nav {
     position: sticky;
     top: 0;
-    background-color: hsl(138, 70%, 84%);
-    color: hsl(220, 3%, 45%);
+    background-color: var(--voediemealgreen);
+    color: var(--voediemealgrey);
     border-style: double;
     margin-bottom: 100px;
 }
@@ -99,15 +104,15 @@ main {
 }
 
 a {
-    color: hsl(220, 3%, 45%);
+    color: var(--voediemealgrey);
 }
 
 a:hover {
-    color: hsl(138, 70%, 84%);
+    color: var(--voediemealgreen);
 }
 
 button {
-    background-color: hsl(138, 70%, 84%);
+    background-color: var(--voediemealgreen);
     padding: 16px;
     border: 1px solid black;
     border-radius: 8px;
@@ -118,8 +123,8 @@ button:hover {
 }
 
 footer {
-    background-color: hsl(138, 70%, 84%);
-    color: hsl(220, 3%, 45%);
+    background-color: var(--voediemealgreen);
+    color: var(--voediemealgrey);
     border-style: double;
     position: fixed;
     left: 0;
@@ -147,7 +152,7 @@ footer {
 
 .footer-container ul li a {
     display: block;
-    color: hsl(220, 3%, 45%);
+    color: var(--voediemealgrey);
     text-align: center;
     padding: 5px 5px;
     text-decoration: none;
@@ -173,7 +178,7 @@ footer {
 
     .nav-container ul li a {
         display: block;
-        color: hsl(220, 3%, 45%);
+        color: var(--voediemealgrey);
         text-align: center;
         padding: 40px 40px;
         text-decoration: none;

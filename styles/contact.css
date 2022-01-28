@@ -5,18 +5,23 @@
     margin: 0;
 }
 
+:root {
+    --voediemealgreen: hsl(138, 70%, 84%);
+    --voediemealgrey: hsl(220, 3%, 45%);
+}
+
 body {
     font-family: 'Source Code Pro', monospace;
     background-image: url("../assets/ingredients-background.jpg");
     background-color: white;
-    color: hsl(220, 3%, 45%)
+    color: var(--voediemealgrey);
 }
 
 nav {
     position: sticky;
     top: 0;
-    background-color: hsl(138, 70%, 84%);
-    color: hsl(220, 3%, 45%);
+    background-color: var(--voediemealgreen);
+    color: var(--voediemealgrey);
     border-style: double;
     margin-bottom: 50px;
 }
@@ -49,7 +54,7 @@ nav {
     list-style-type: none;
 }
 
-main    {
+main {
     background-color: white;
     border-radius: 8px;
     border: 1px solid #dadce0;
@@ -62,7 +67,7 @@ main    {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items:center;
+    align-items: center;
     padding: 20px;
 }
 
@@ -72,7 +77,7 @@ main    {
     padding: 16px;
 }
 
-#contactlogo{
+#contactlogo {
     width: 150px;
     border-radius: 80px;
 }
@@ -95,15 +100,14 @@ main    {
     width: 250px;
 }
 
-#user-message
-{
+#user-message {
     padding: 8px;
     margin: 8px;
     width: 250px;
 }
 
-button{
-    background-color: hsl(138, 70%, 84%);
+button {
+    background-color: var(--voediemealgreen);
     padding: 16px;
     margin: 16px;
     border: 1px solid black;
@@ -115,8 +119,8 @@ button:hover {
 }
 
 footer {
-    background-color: hsl(138, 70%, 84%);
-    color: hsl(220, 3%, 45%);
+    background-color: var(--voediemealgreen);
+    color: var(--voediemealgrey);
     border-style: double;
     position: fixed;
     left: 0;
@@ -144,14 +148,14 @@ footer {
 
 .footer-container ul li a {
     display: block;
-    color: hsl(220, 3%, 45%);
+    color: var(--voediemealgrey);
     text-align: center;
     padding: 3px;
     text-decoration: none;
     border-radius: 6px;
 }
 
-.active{
+.active {
     border: 2px solid hsl(138, 70%, 75%);
 }
 
@@ -170,7 +174,7 @@ footer {
 
     .nav-container ul li a {
         display: block;
-        color: hsl(220, 3%, 45%);
+        color: var(--voediemealgrey);
         text-align: center;
         padding: 40px 40px;
         text-decoration: none;

@@ -5,6 +5,11 @@
     margin: 0;
 }
 
+:root {
+    --voediemealgreen: hsl(138, 70%, 84%);
+    --voediemealgrey: hsl(220, 3%, 45%);
+}
+
 body {
     font-family: 'Source Code Pro', monospace;
     background-color: white;
@@ -14,8 +19,8 @@ body {
 nav {
     position: sticky;
     top: 0;
-    background-color: hsl(138, 70%, 84%);
-    color: hsl(220, 3%, 45%);
+    background-color: var(--voediemealgreen);
+    color: var(--voediemealgrey);
     border-style: double;
 }
 
@@ -47,10 +52,67 @@ nav {
     list-style-type: none;
 }
 
+h2 {
+    text-align: center;
+    margin-top: 75px;
+    margin-bottom: 10px;
+}
+
+p {
+    padding: 50px;
+    margin-bottom: 75px;
+}
+
+.outer-container1 {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+}
+ .about-us {
+     display: inline-block;
+     width: 50%;
+     border: solid 1px black;
+ }
+
+.background-container1 {
+    display: inline-block;
+    width: 50%;
+    background-image: url('../assets/ingredients-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: solid 1px black;
+}
+
+.outer-container2 {
+    display: flex;
+    height: auto;
+    flex-direction: row;
+}
+
+.why-voediemeals {
+    display: inline-block;
+    width: 50%;
+    border: solid 1px black;
+}
+
+.background-container2 {
+    display: inline-block;
+    width: 50%;
+    background-image: url('../assets/ingredients-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: solid 1px black;
+}
+
 footer {
-    background-color: hsl(138, 70%, 84%);
-    color: hsl(220, 3%, 45%);
+    background-color: var(--voediemealgreen);
+    color: var(--voediemealgrey);
     border-style: double;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 25px;
+    width: 100%;
     margin-top: 50px;
 }
 
@@ -72,14 +134,14 @@ footer {
 
 .footer-container ul li a {
     display: block;
-    color: hsl(220, 3%, 45%);
+    color: var(--voediemealgrey);
     text-align: center;
     padding: 5px 5px;
     text-decoration: none;
     border-radius: 6px;
 }
 
-.active{
+.active {
     border: 2px solid hsl(138, 70%, 75%);
 }
 
@@ -98,7 +160,7 @@ footer {
 
     .nav-container ul li a {
         display: block;
-        color: hsl(220, 3%, 45%);
+        color: var(--voediemealgrey);
         text-align: center;
         padding: 40px 40px;
         text-decoration: none;
