@@ -85,7 +85,7 @@ nav {
     flex-basis: 300px;
     flex-grow: 1;
     flex-shrink: 1;
-    height: 400px;
+    height: fit-content;
     padding: 16px;
     margin: 50px;
     border: 1px solid black;
@@ -101,6 +101,7 @@ nav {
     background-color: var(--voediemealgreen);
     color: var(--voediemealgrey);
     padding: 16px;
+    margin-top: 16px;
     width: 200px;
     border: 1px solid black;
     border-radius: 8px;
@@ -215,7 +216,7 @@ footer {
 
     .output-section {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-evenly;
     }
 }

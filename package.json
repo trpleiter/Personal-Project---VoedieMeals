@@ -19,5 +19,8 @@
   "homepage": "https://github.com/trpleiter/Personal-Project---VoedieMeals#readme",
   "devDependencies": {
     "parcel": "^2.2.1"
+  },
+  "dependencies": {
+    "axios": "^0.25.0"
   }
 }
