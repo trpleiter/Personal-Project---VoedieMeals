@@ -1,0 +1,309 @@
+@import "https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;900&display=swap";
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --voediemealgreen: hsl(138, 70%, 84%);
+    --voediemealgrey: hsl(220, 3%, 45%);
+}
+
+body {
+    font-family: 'Source Code Pro', monospace;
+    background-color: white;
+    color: var(--voediemealgrey)
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: var(--voediemealgreen);
+    color: var(--voediemealgrey);
+    border-style: double;
+}
+
+#logo {
+    width: 120px;
+}
+
+#login {
+    width: 12px;
+}
+
+#navigatie-dropdown {
+    width: 30px;
+    display: block;
+}
+
+#navigatie-dropdown:hover {
+    cursor: pointer;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-container ul {
+    display: none;
+    list-style-type: none;
+}
+
+.intro-voediemaag {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 35px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    padding: 50px;
+    border: 1px solid black;
+    background-color: var(--voediemealgreen);
+    border-radius: 12px;
+    box-shadow: 10px 10px 5px var(--voediemealgrey);
+}
+
+.\=section-search {
+    background-color: var(--voediemealgrey);
+    color: var(--voediemealgreen);
+    text-align: center;
+    border: 1px solid black;
+    box-shadow: 10px 10px 5px var(--voediemealgreen);
+    border-radius: 15px;
+    height: 350px;
+    padding: 16px;
+    margin: 50px;
+    flex-basis: 300px;
+    flex-shrink: 1;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#search-icon {
+    border-radius: 10px;
+    height: 100px;
+    width: 100px;
+}
+
+.\=section-search h2 {
+    font-size: 30px;
+    padding: 40px;
+}
+
+.section-choose {
+    background-color: var(--voediemealgreen);
+    text-align: center;
+    border: 1px solid black;
+    box-shadow: 10px 10px 5px var(--voediemealgrey);
+    border-radius: 15px;
+    height: 350px;
+    padding: 16px;
+    margin: 50px;
+    flex-basis: 300px;
+    flex-shrink: 1;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#mouse-icon {
+    border-radius: 10px;
+    height: 100px;
+    width: 100px;
+}
+
+.section-choose h2 {
+    font-size: 30px;
+    padding: 40px;
+}
+
+.section-cook {
+    background-color: var(--voediemealgrey);
+    color: var(--voediemealgreen);
+    text-align: center;
+    border: 1px solid black;
+    box-shadow: 10px 10px 5px var(--voediemealgreen);
+    border-radius: 15px;
+    height: 350px;
+    padding: 16px;
+    margin: 50px;
+    flex-basis: 300px;
+    flex-shrink: 1;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#cook-icon {
+    border-radius: 10px;
+    height: 100px;
+    width: 100px;
+}
+
+.section-cook h2 {
+    font-size: 30px;
+    padding: 40px;
+}
+
+.searchbar {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#user-food-input {
+    font-size: large;
+    width: 600px;
+    padding: 16px;
+    border-radius: 8px;
+    margin-right: 8px;
+}
+
+button {
+    background-color: var(--voediemealgreen);
+    font-size: large;
+    width: 100px;
+    padding: 16px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: hsl(138, 70%, 75%);
+}
+
+h3 {
+    font-size: 30px;
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.background-container {
+    background-image: url("ingredients-background.75b20bc4.jpg");
+}
+
+.recipe-results-row1 section {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 150px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    height: 200px;
+    padding: 16px;
+    margin: 50px;
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px var(--voediemealgreen);
+}
+
+.recipe-results-row2 section {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 150px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    height: 200px;
+    padding: 16px;
+    margin: 50px;
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px var(--voediemealgreen);
+}
+
+footer {
+    background-color: var(--voediemealgreen);
+    color: var(--voediemealgrey);
+    border-style: double;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 12px;
+}
+
+.footer-container ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: 300px;
+}
+
+.footer-container ul li a {
+    display: block;
+    color: var(--voediemealgrey);
+    text-align: center;
+    padding: 5px 5px;
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+.active {
+    border: 2px solid hsl(138, 70%, 75%);
+}
+
+@media screen and (min-width: 768px) {
+    #navigatie-dropdown {
+        display: none;
+    }
+
+    .nav-container ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        flex-basis: 750px;
+    }
+
+    .nav-container ul li a {
+        display: block;
+        color: var(--voediemealgrey);
+        text-align: center;
+        padding: 40px 40px;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 15px;
+    }
+
+    li a:hover {
+        background-color: hsl(138, 70%, 80%);
+    }
+
+    .tutorial-voediemaag {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .recipe-results-row1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .recipe-results-row2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+}
+/*# sourceMappingURL=voedie-maag.65535dc4.css.map */

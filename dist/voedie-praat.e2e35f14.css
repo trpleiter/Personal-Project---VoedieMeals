@@ -1,0 +1,221 @@
+@import "https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;900&display=swap";
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --voediemealgreen: hsl(138, 70%, 84%);
+    --voediemealgrey: hsl(220, 3%, 45%);
+}
+
+body {
+    font-family: 'Source Code Pro', monospace;
+    background-color: white;
+    color: hsl(220, 3%, 45%)
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: var(--voediemealgreen);
+    color: var(--voediemealgrey);
+    border-style: double;
+}
+
+#logo {
+    width: 120px;
+}
+
+#login {
+    width: 12px;
+}
+
+#navigatie-dropdown {
+    width: 30px;
+    display: block;
+}
+
+#navigatie-dropdown:hover {
+    cursor: pointer;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-container ul {
+    display: none;
+    list-style-type: none;
+}
+
+.intro-voediepraat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    padding: 40px;
+    border: 1px solid black;
+    border-radius: 12px;
+    box-shadow: 10px 10px 5px var(--voediemealgrey);
+}
+
+.intro-voediepraat h2 {
+    font-weight: bold;
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+
+.output-section {
+    background-image: url("ingredients-background.75b20bc4.jpg");
+    padding-bottom: 100px;
+}
+
+.fact-or-joke {
+    background-color: var(--voediemealgrey);
+    color: var(--voediemealgreen);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-basis: 300px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    height: 400px;
+    padding: 16px;
+    margin: 50px;
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px var(--voediemealgreen);
+}
+
+.fact-or-joke h3 {
+    font-size: 25px;
+}
+
+.fact-or-joke button {
+    background-color: var(--voediemealgreen);
+    color: var(--voediemealgrey);
+    padding: 16px;
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.fact-or-joke button:hover {
+    background-color: hsl(138, 70%, 75%);
+}
+
+.personal-data {
+    background-color: var(--voediemealgreen);
+    color: var(--voediemealgrey);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-basis: 300px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    height: 400px;
+    padding: 16px;
+    margin: 50px;
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px var(--voediemealgrey);
+}
+
+.personal-data h3 {
+    font-size: 25px;
+}
+
+.personal-data button {
+    background-color: var(--voediemealgrey);
+    color: var(--voediemealgreen);
+    padding: 16px;
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.personal-data button:hover {
+    background-color: hsl(220, 3%, 35%);
+}
+
+footer {
+    background-color: var(--voediemealgreen);
+    color: var(--voediemealgrey);
+    border-style: double;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 25px;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 12px;
+}
+
+.footer-container ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: 300px;
+}
+
+.footer-container ul li a {
+    display: block;
+    color: var(--voediemealgrey);
+    text-align: center;
+    padding: 5px 5px;
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+.active {
+    border: 2px solid hsl(138, 70%, 75%);
+}
+
+@media screen and (min-width: 768px) {
+    #navigatie-dropdown {
+        display: none;
+    }
+
+    .nav-container ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        flex-basis: 750px;
+    }
+
+    .nav-container ul li a {
+        display: block;
+        color: var(--voediemealgrey);
+        text-align: center;
+        padding: 40px 40px;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 15px;
+    }
+
+    li a:hover {
+        background-color: hsl(138, 70%, 80%);
+    }
+
+    .output-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+/*# sourceMappingURL=voedie-praat.e2e35f14.css.map */

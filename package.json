@@ -1,0 +1,23 @@
+{
+  "name": "voediemeals",
+  "version": "1.0.0",
+  "description": "contributing to less waste by using leftovers",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "parcel src/pages/index.html",
+    "build": "parcel build src/pages/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trpleiter/Personal-Project---VoedieMeals.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trpleiter/Personal-Project---VoedieMeals/issues"
+  },
+  "homepage": "https://github.com/trpleiter/Personal-Project---VoedieMeals#readme",
+  "devDependencies": {
+    "parcel": "^2.2.1"
+  }
+}

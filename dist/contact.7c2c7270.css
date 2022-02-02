@@ -1,0 +1,188 @@
+@import "https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;900&display=swap";
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --voediemealgreen: hsl(138, 70%, 84%);
+    --voediemealgrey: hsl(220, 3%, 45%);
+}
+
+body {
+    font-family: 'Source Code Pro', monospace;
+    background-image: url("ingredients-background.75b20bc4.jpg");
+    background-color: white;
+    color: var(--voediemealgrey);
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: var(--voediemealgreen);
+    color: var(--voediemealgrey);
+    border-style: double;
+    margin-bottom: 50px;
+}
+
+#logo {
+    width: 120px;
+}
+
+#login {
+    width: 12px;
+}
+
+#navigatie-dropdown {
+    width: 30px;
+    display: block;
+}
+
+#navigatie-dropdown:hover {
+    cursor: pointer;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-container ul {
+    display: none;
+    list-style-type: none;
+}
+
+main {
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid #dadce0;
+    display: block;
+    margin: auto;
+    width: 450px;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.contact-container span {
+    text-align: center;
+    font-weight: bold;
+    padding: 16px;
+}
+
+#contactlogo {
+    width: 150px;
+    border-radius: 80px;
+}
+
+#first-name {
+    padding: 8px;
+    margin: 8px;
+    width: 250px;
+}
+
+#surname {
+    padding: 8px;
+    margin: 8px;
+    width: 250px;
+}
+
+#user-email {
+    padding: 8px;
+    margin: 8px;
+    width: 250px;
+}
+
+#user-message {
+    padding: 8px;
+    margin: 8px;
+    width: 250px;
+}
+
+button {
+    background-color: var(--voediemealgreen);
+    padding: 16px;
+    margin: 16px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: hsl(138, 70%, 75%);
+}
+
+footer {
+    background-color: var(--voediemealgreen);
+    color: var(--voediemealgrey);
+    border-style: double;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 25px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 12px;
+}
+
+.footer-container ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: 300px;
+}
+
+.footer-container ul li a {
+    display: block;
+    color: var(--voediemealgrey);
+    text-align: center;
+    padding: 3px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.active {
+    border: 2px solid hsl(138, 70%, 75%);
+}
+
+@media screen and (min-width: 768px) {
+    #navigatie-dropdown {
+        display: none;
+    }
+
+    .nav-container ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        flex-basis: 750px;
+    }
+
+    .nav-container ul li a {
+        display: block;
+        color: var(--voediemealgrey);
+        text-align: center;
+        padding: 40px 40px;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 15px;
+    }
+
+    li a:hover {
+        background-color: hsl(138, 70%, 80%);
+    }
+}
+/*# sourceMappingURL=contact.7c2c7270.css.map */
