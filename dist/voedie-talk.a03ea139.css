@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;900&display=swap');
-
+@import "https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;900&display=swap";
 * {
     padding: 0;
     margin: 0;
@@ -71,7 +70,7 @@ nav {
 }
 
 .output-section {
-    background-image: url("../assets/ingredients-background.jpg");
+    background-image: url("ingredients-background.75b20bc4.jpg");
     padding-bottom: 100px;
 }
 
@@ -93,8 +92,9 @@ nav {
     box-shadow: 10px 10px 5px var(--voediemealgreen);
 }
 
-.fact-or-joke h3 {
-    font-size: 25px;
+.fact-or-joke p {
+    font-size: 24px;
+    font-weight: normal;
 }
 
 .fact-or-joke button {
@@ -129,8 +129,9 @@ nav {
     box-shadow: 10px 10px 5px var(--voediemealgrey);
 }
 
-.personal-data h3 {
-    font-size: 25px;
+.personal-data p {
+    font-size: 24px;
+    font-weight: normal;
 }
 
 .personal-data button {
@@ -150,12 +151,6 @@ footer {
     background-color: var(--voediemealgreen);
     color: var(--voediemealgrey);
     border-style: double;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    height: 25px;
-    width: 100%;
-    margin-top: 100px;
 }
 
 .footer-container {
@@ -220,3 +215,4 @@ footer {
         justify-content: space-evenly;
     }
 }
+/*# sourceMappingURL=voedie-talk.a03ea139.css.map */

@@ -55,6 +55,7 @@ nav {
 .intro-voediemaag {
     display: flex;
     justify-content: center;
+    text-align: center;
     font-weight: bold;
     font-size: 35px;
     margin-left: 50px;

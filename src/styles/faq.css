@@ -81,7 +81,7 @@ h1 {
 
 .q-container {
     width: 50%;
-    height: 80px;
+    height: fit-content;
     background-color: var(--voediemealgreen);
     position: relative;
     border-radius: 10px;
@@ -94,7 +94,7 @@ h1 {
 
 .a-container {
     width: 40%;
-    height: 80px;
+    height: fit-content;
     background-color: var(--voediemealgrey);
     color: var(--voediemealgreen);
     position: relative;

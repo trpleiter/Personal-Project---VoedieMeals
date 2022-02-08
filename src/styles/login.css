@@ -100,7 +100,8 @@ main {
 }
 
 .account-set ul a {
-    padding: 45px;
+    padding: 8px;
+    margin: 52px;
 }
 
 a {

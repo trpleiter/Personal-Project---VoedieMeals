@@ -1,4 +1,5 @@
-@import "https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;900&display=swap";
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -70,7 +71,7 @@ nav {
 }
 
 .output-section {
-    background-image: url("ingredients-background.75b20bc4.jpg");
+    background-image: url("../assets/ingredients-background.jpg");
     padding-bottom: 100px;
 }
 
@@ -215,4 +216,3 @@ footer {
         justify-content: space-evenly;
     }
 }
-/*# sourceMappingURL=voedie-praat.e2e35f14.css.map */
