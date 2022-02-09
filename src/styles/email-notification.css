@@ -18,9 +18,12 @@ body {
 }
 
 nav {
+    position: sticky;
+    top: 0;
     background-color: var(--voediemealgreen);
     color: var(--voediemealgrey);
     border-style: double;
+    margin-bottom: 100px;
 }
 
 #logo {
@@ -51,85 +54,54 @@ nav {
     list-style-type: none;
 }
 
-.outer-container {
-    display: flex;
-    flex-direction: row;
-}
-
-.flexbackground {
-    display: flex;
-    width: 50%;
-    background-image: url('../assets/faqpic.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 main {
-    margin-top: 32px;
-    margin-right: 32px;
-    width: 50%;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid #dadce0;
+    display: block;
+    margin: auto;
+    width: 450px;
+}
+
+.email-notification-container {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
 }
 
-
-h1 {
-    margin-top: 50px;
-    margin-left: 20px;
-    margin-bottom: 50px;
+#login-logo {
+    width: 150px;
+    border-radius: 80px;
 }
 
-.q-container {
-    width: 50%;
-    height: fit-content;
-    background-color: var(--voediemealgreen);
-    position: relative;
-    border-radius: 10px;
-    padding: 16px;
-    margin-left: 50px;
-    margin-bottom: 25px;
+h3 {
+    font-size: 24px;
     font-weight: bold;
-    box-shadow: 10px 10px 5px grey;
-}
-
-.a-container {
-    width: 40%;
-    height: fit-content;
-    background-color: var(--voediemealgrey);
-    color: var(--voediemealgreen);
-    position: relative;
-    border-radius: 10px;
     padding: 16px;
-    margin-left: 100px;
-    margin-bottom: 50px;
-    box-shadow: 10px 10px 5px grey;
 }
 
-.q-container::before,
-.a-container::before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 0;
-    border-top: 13px solid transparent;
-    border-bottom: 13px solid transparent;
-    position: absolute;
-    left: -20px;
-    top: 20px;
+.email-notification-container span {
+    font-size: 14px;
+    padding: 16px;
+    text-align: center;
 }
 
-.q-container::before {
-    border-right: 20px solid var(--voediemealgreen);
-}
-
-.a-container::before {
-    border-right: 20px solid var(--voediemealgrey);
+#mail-icon {
+    width: 150px;
 }
 
 footer {
     background-color: var(--voediemealgreen);
     color: var(--voediemealgrey);
     border-style: double;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 25px;
+    width: 100%;
+    margin-top: 100px;
 }
 
 .footer-container {
@@ -152,13 +124,9 @@ footer {
     display: block;
     color: var(--voediemealgrey);
     text-align: center;
-    padding: 3px;
+    padding: 5px 5px;
     text-decoration: none;
     border-radius: 6px;
-}
-
-.active {
-    border: 2px solid hsl(138, 70%, 75%);
 }
 
 @media screen and (min-width: 768px) {

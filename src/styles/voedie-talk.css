@@ -53,6 +53,7 @@ nav {
 }
 
 .intro-voediepraat {
+    background-image: linear-gradient(white, var(--voediemealgreen));
     display: flex;
     flex-direction: column;
     justify-content: center;
