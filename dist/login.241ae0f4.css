@@ -80,22 +80,22 @@ main {
     padding: 16px;
 }
 
-#user-email-field {
+#username-field {
     width: 250px;
     padding: 8px;
     margin: 8px;
 }
 
 #user-password-field {
+    width: 250px;
     padding: 8px;
     margin: 8px;
-    width: 250px;
 }
 
 .account-set {
     font-style: italic;
     font-size: 10px;
-    margin-bottom: 32px;
+    margin-bottom: 16px;
 }
 
 .account-set ul a {
@@ -109,6 +109,19 @@ a {
 
 a:hover {
     color: var(--voediemealgreen);
+}
+
+#username-warning {
+    color: red;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+#password-warning {
+    color: red;
+    padding: 0px;
+    margin-bottom: 16px;
+    text-align: center;
 }
 
 button {
