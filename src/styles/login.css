@@ -116,12 +116,14 @@ a:hover {
     color: red;
     padding: 0px;
     margin-bottom: 0px;
+    font-size: 12px;
 }
 
 #password-warning {
     color: red;
     padding: 0px;
     margin-bottom: 16px;
+    font-size: 12px;
     text-align: center;
 }
 

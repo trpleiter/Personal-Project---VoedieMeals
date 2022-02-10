@@ -30,12 +30,13 @@
         <input type="text" placeholder="Firstname" id="first-name" name="first-name"/>
         <label for="surname"></label>
         <input type="text" placeholder="Surname" id="surname" name="surname"/>
-        <label for="user-email"></label>
-        <input type="email" placeholder="Email" id="user-email" name="user-email"/>
+        <label for="user-email-field"></label>
+        <input type="email" placeholder="E-mailadress" id="user-email-field" name="user-email"/>
         <label for="user-message"></label>
         <textarea name="user-message" placeholder="Typ your message here.." id="user-message" cols="30"
                   rows="10"></textarea>
-        <button type="submit">Send</button>
+        <span id="email-warning"></span>
+        <a href="contact-notification.html"><button type="submit">Send</button></a>
     </div>
 
 </main>
@@ -50,6 +51,6 @@
         </ul>
     </div>
 </footer>
-
+<script src="../scripts/contact.js"></script>
 </body>
 </html>

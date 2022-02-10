@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../styles/password.css">
+    <link rel="stylesheet" href="../styles/email-notification.css">
     <link rel="icon"
           type="image/pjg"
           href="../assets/voedie-logo.jpg"/>
-    <title>Reset password</title>
+    <title>Email notification</title>
 </head>
 <body>
 <nav>
@@ -23,14 +23,12 @@
 </nav>
 
 <main>
-    <div class="reset-password-container">
+    <div class="email-notification-container">
         <a href="index.html"><img src="../assets/voedie-logo.jpg" alt="logo" id="login-logo"></a>
-        <h3>Reset password</h3>
-        <span>Enter the email associated with your account and we will send an email with instructions to reset your password</span>
-        <label for="user-email-field"></label>
-        <input type="email" placeholder="E-mailadress" id="user-email-field" name="username" required/>
-        <span id="email-warning"></span>
-        <button type="submit">Send instructions</button>
+        <h3>We will be in touch!</h3>
+        <span>Give us some time to get back to you. We will send you a confirmation by mail once your message has been received</span>
+        <img src="../assets/email-icon.png" alt="mail" id="mail-icon">
+        <span>Did not receive the email? Check your spam filter as well.</span>
     </div>
 </main>
 
@@ -44,6 +42,6 @@
         </ul>
     </div>
 </footer>
-<script src="../scripts/password.js"></script>
+<script src="../scripts/forgot-password.js"></script>
 </body>
 </html>
